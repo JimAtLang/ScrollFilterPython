@@ -6,4 +6,4 @@ class Screen:
         self.height = height
 
     def render(self, sprite, x, y):
-        print(f"rendering a {sprite.type} sprite at x:{x}, y:{y}")
+        print(f"rendering a {sprite.name} sprite at x:{x}, y:{y}")
