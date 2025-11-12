@@ -1,6 +1,6 @@
 class Sprite:
-    def __init__(self,type, x,y,width,height):
-        self.type = type
+    def __init__(self, name, x, y, width, height):
+        self.name = name
         self.x = x
         self.y = y
         self.width = width
