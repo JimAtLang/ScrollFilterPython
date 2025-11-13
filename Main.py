@@ -3,7 +3,7 @@ from Screen import *
 
 world_width = 10000
 world_height = 10000
-screen = Screen(4000,4000, 800, 600)
+screen = Screen(3278,4312, 800, 600)
 sprites = []
 with open ("sprites.txt","r") as f:
     lines = f.readlines()
