@@ -3,7 +3,7 @@ from Screen import *
 
 world_width = 10000
 world_height = 10000
-screen = Screen(4000,4000, 800, 600)
+screen = Screen(3278,4312, 800, 600)
 sprites = []
 with open ("sprites.txt","r") as f:
     lines = f.readlines()
@@ -16,8 +16,9 @@ with open ("sprites.txt","r") as f:
         height = int(parts[4])
         sprite = Sprite(name,x,y,width,height)
         sprites.append(sprite)
-last_sprite = sprites[-1]
-screen.render(last_sprite.name, 80, 120)
+for sprite in sprites:
+
+    screen.render(sprite,sprite.x,sprite.y)
 # for sprite in sprites:
 #     print(f"name: {sprite.name}, x: {sprite.x}, y: {sprite.y},width: {sprite.width}, height: {sprite.height}")
 # 1) make a list called rendered
