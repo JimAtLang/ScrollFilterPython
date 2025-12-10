@@ -17,7 +17,8 @@ with open ("sprites.txt","r") as f:
         sprite = Sprite(name,x,y,width,height)
         sprites.append(sprite)
 for sprite in sprites:
-    screen.render(sprite, sprite.x, sprite.y)
+
+    screen.render(sprite,sprite.x,sprite.y)
 # for sprite in sprites:
 #     print(f"name: {sprite.name}, x: {sprite.x}, y: {sprite.y},width: {sprite.width}, height: {sprite.height}")
 # 1) make a list called rendered
